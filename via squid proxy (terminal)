@@ -1,0 +1,11 @@
+sudo apt update
+sudo apt install squid
+systemctl status squid.service
+systemctl status squid.service
+sudo nano /etc/squid/squid.conf
+sudo apt install apache2-utils
+sudo htpasswd -c /etc/squid/passwords Aliya
+sudo nano /etc/squid/squid.conf
+sudo systemctl restart squid.service
+sudo ufw allow 3128
+curl -v -x http://Aliya:password@192.168.1.88:3128 http://www.google.com/
