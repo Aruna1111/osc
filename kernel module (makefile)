@@ -17,3 +17,8 @@ module_init(hello_init);
 module_exit(hello_exit);  
   
 MODULE_LICENSE("GPL");
+test:
+ sudo dmesg -C
+ sudo insmod lkm_example.ko
+ sudo rmmod lkm_example.ko
+ dmesg
