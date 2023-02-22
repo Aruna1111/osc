@@ -1,8 +1,0 @@
-sudo apt-get install build-essential kmod
-mkdir lkm_example
-cd lkm_example
-nano lkm_example.c
-nano Makefile
-sudo insmod lkm_example.ko
-nano test
-make test
