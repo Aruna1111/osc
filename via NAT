@@ -1,9 +1,0 @@
-sudo nano /etc/sysctl.conf
-sudo sysctl –p
-sudo apt install iptables-persistent
-sudo iptables –L
-sudo iptables -t nat -A POSTROUTING -j MASQUERADE
-sudo iptables -t nat –L
-sudo sh -c “iptables-save > /etc/iptables/rules.v4”
-ping 192.168.1.88
-ping www.google.com -c 3
